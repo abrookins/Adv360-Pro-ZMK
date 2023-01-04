@@ -2,13 +2,13 @@ macro_macro_prev_tab: macro_macro_prev_tab{
 compatible = "zmk,behavior-macro";
 label = "macro_macro_prev_tab";
 #binding-cells = <0>;
-bindings = <&kp LEFT_COMMAND>, <&kp LEFT_BRACE>;
+bindings = <&kp LEFT_COMMAND>, <&kp LEFT_SHIFT>, <&kp LEFT_BRACE>;
 };
 macro_next_tab: macro_next_tab{
 compatible = "zmk,behavior-macro";
 label = "macro_next_tab";
 #binding-cells = <0>;
-bindings = <&kp LEFT_COMMAND>, <&kp RIGHT_BRACE>;
+bindings = <&kp LEFT_COMMAND>, <&kp LEFT_SHIFT>, <&kp RIGHT_BRACE>;
 };
 macro_delete_word: macro_delete_word{
 compatible = "zmk,behavior-macro";
