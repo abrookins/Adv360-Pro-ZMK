@@ -4,7 +4,7 @@ label = "macro_macro_ctrl_tab2";
 #binding-cells = <0>;
 bindings = <&kp LEFT_SHIFT>, <&kp RCTRL>, <&kp TAB>;
 };
-macro_ctrl-tab: macro_ctrl_tab{
+macro_ctrl_tab: macro_ctrl_tab{
 compatible = "zmk,behavior_macro";
 label = "macro_ctrl_tab";
 #binding-cells = <0>;
