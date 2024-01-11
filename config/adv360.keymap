@@ -46,7 +46,7 @@
         del_word: del_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(BACKSPACE) &kp>;
+            bindings = <&kp LA(BACKSPACE)>;
             label = "DEL_WORD";
         };
 
