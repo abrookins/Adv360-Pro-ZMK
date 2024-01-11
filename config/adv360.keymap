@@ -38,6 +38,27 @@
             bindings = <&kp LA(BACKSPACE)>;
             label = "DEL_WORD";
         };
+
+        next_tab: next_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(TAB)>;
+            label = "NEXT_TAB";
+        };
+
+        prev_tab: prev_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp LC(TAB)>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
+
+            label = "PREV_TAB";
+        };
     };
 
     keymap {
